@@ -17,21 +17,21 @@ class Home extends Component {
         
             {
                 id:1,
-                name:"jordan Retro 5",
+                name:"jordan Retros",
                 image:"/images/jordan11.jpg",
                 description:"jordan XI"
             },
 
             {
-                id:1,
-                name:"jordan Retro 5",
+                id:2,
+                name:"jordan Retros",
                 image:"/images/jordanbred.jpg",
                 description:"jordan bred"
             },
 
             {
-                id:1,
-                name:"jordan Retro 5",
+                id:3,
+                name:"jordan Retros",
                 image:"/images/jordan5.jpg",
                 description:"jordan VI"
             }
@@ -44,7 +44,7 @@ class Home extends Component {
 
         const homePage = this.state.sneakers.map(sneaker => {
             return(
-                <div className="col">
+                <div key={sneaker.id} className="col">
                     <img src ={sneaker.image}/>
                     <h2>{sneaker.name}</h2>
                     <p>{sneaker.description}</p>
