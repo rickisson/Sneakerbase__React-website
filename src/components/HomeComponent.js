@@ -1,5 +1,6 @@
  import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
  import React, {Component} from 'react';
+import HomeCarousel from './CarouselComponent';
 
 class Home extends Component {
     constructor(props){
@@ -54,7 +55,11 @@ class Home extends Component {
         return(
            <div className="container">
                <div className="row">
-                   {homePage}
+                 
+                     
+                </div>
+               <div className="row">
+                  {homePage}
                </div>
 
            </div>

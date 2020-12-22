@@ -4,6 +4,7 @@ import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import About from './AboutComponent';
 import Blog from './BlogComponent';
+import HomeCarousel from './CarouselComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 
