@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function About(props){
+class Search extends Component{
+    constructor(props){
+        super(props);
+
+    }
+
+    render(){
 
 
     return(
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <h2>About Us</h2>
+                    <h2>BEGIN YOUR SNEAKER SEARCH</h2>
                 </div>
             </div>
             <div className="row">
@@ -21,4 +27,6 @@ function About(props){
     )
 }
 
-export default About;
+}
+
+export default Search;

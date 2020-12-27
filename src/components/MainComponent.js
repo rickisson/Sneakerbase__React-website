@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
-import About from './AboutComponent';
+import Search from './SearchComponent';
 import Blog from './BlogComponent';
-import HomeCarousel from './CarouselComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 
@@ -23,13 +22,14 @@ render(){
         
           <div>
             <Header/>
-            
+           
             <Switch>
                 <Route path='/home' component={Home} />
-                <Route path='/about' component={About} />
+                <Route path='/search' component={Search} />
                 <Route path='/blog' component={Blog} />
                 <Redirect to='/home' />
                 <Home/>
+               
             </Switch>
             
             <Footer/>

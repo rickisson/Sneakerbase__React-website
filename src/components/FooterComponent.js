@@ -7,7 +7,7 @@ function Footer(props){
             <div className = "container">
                 <div className= "row">
                     <div className ="col">
-                        <h5>Links</h5>
+                        <h5></h5>
                         <ul>
                             {/* <li>Home</li>
                             <li>About</li>
