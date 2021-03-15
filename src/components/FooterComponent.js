@@ -9,10 +9,10 @@ function Footer(props){
                     <div className ="col">
                         <h5></h5>
                         <ul>
-                            {/* <li>Home</li>
+                            <li>Home</li>
                             <li>About</li>
                             <li>Contact</li>
-                            <li>Blog</li> */}
+                            <li>Blog</li> 
                         </ul>
                     </div>
                 </div>

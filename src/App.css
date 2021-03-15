@@ -4,18 +4,19 @@
   
   padding: 20px 0;
 }
-
-.jumbotron {
-  margin: 0;
-  padding: 30px;
-  background-image: grey;
-  color: white;
-}
-
-.jumbotron h2 {
-  color: #CEC8FF;
+.container-fluid {
+  color:white;
+  text-align: center;
 }
 
 .navbar-dark {
-  background-color: black;
+  background-color:black;
 }
+
+i{
+  padding: 1em;
+ 
+ 
+}
+
+

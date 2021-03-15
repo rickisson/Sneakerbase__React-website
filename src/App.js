@@ -10,7 +10,7 @@ class App extends Component {
     render() {
         return (
             <BrowserRouter>
-            <div style={{backgroundImage: `url(${blue})`, backgroundSize: 'cover', }} className="App">
+            <div className="my-container" >
                 <Main />
             </div>
         </BrowserRouter>

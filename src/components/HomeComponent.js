@@ -1,6 +1,9 @@
  import { Card, CardImg, CardText, CardBody, CardTitle , Form,Label,Input,FormGroup,Button} from 'reactstrap';
  import React, {Component} from 'react';
  import Carousel from 'react-bootstrap/Carousel'
+ import t from "../img/t.png";
+
+ 
 
  
 
@@ -59,18 +62,32 @@ class Home extends Component {
   
         return(
             <React.Fragment>
+
+            <div className="container-fluid" style={{backgroundColor:'brown'}}>
+                <div className="row">
+                <div className="col">
+                   <h1 ><b>Welcome To The Home Of All Sneakers</b></h1>
+                   <h2><b>Sneakerbase is The Place to Find all your favorite sneakers and their prices</b></h2>
+                </div>
+                </div>
+                </div>    
                  
-           <div  className="container">
-               <div className="row">
-                   <h1 ><b>Welcome To The Home Of All Sneakers!!!</b></h1>
-                   <h2>Sneakerbase is The Place to Find all your favorite sneakers and their prices</h2>
+           <div  className="container-fluid"  style={{backgroundImage: `url(${t})`, height:'400px'}}>
+               <div className="row"  >
+                   <div className="col"  >
+                         
+                   </div>
+
+               </div>
+               <div className="row ">
+                  
                 </div>
                 <br></br>
                 <div className="row">
                     <div className="col">
                     <Form>  
                         <FormGroup>
-                            <Label htmlFor="email">Subscribe to our Newsletter</Label>
+                            <Label htmlFor="email"><b>Subscribe to our Newsletter</b></Label>
                             <Input type="text" name="email" id="email" innerRef="{input =>this.email}"/>
 
                         </FormGroup>
@@ -86,17 +103,14 @@ class Home extends Component {
                   {homePage} 
                </div>
                </div>
-               <div className="container">
-                   <div className="row">
-                     <RenderCarousel/>
-                   </div>
-               </div>
+              
                
             </React.Fragment>
         );
     }
 
 }
+
 
 
 class RenderCarousel extends React.Component {
@@ -125,5 +139,9 @@ class RenderCarousel extends React.Component {
   }
 
 } 
+
+
+
+
 
 export default Home;
