@@ -1,3 +1,4 @@
+ // eslint-disable-next-line
  import { Card, CardImg, CardText, CardBody, CardTitle , Form,Label,Input,FormGroup,Button} from 'reactstrap';
  import React, {Component} from 'react';
  import Carousel from 'react-bootstrap/Carousel'
@@ -5,10 +6,7 @@
 
  
 
- 
-
-
-class Home extends Component {
+ class Home extends Component {
     constructor(props){
         super(props);
         this.state = { 

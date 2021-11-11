@@ -1,9 +1,9 @@
+// eslint-disable-next-line
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import Search from './SearchComponent';
-import Blog from './BlogComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 
@@ -26,11 +26,11 @@ render(){
             <Switch>
                 <Route path='/home' component={Home} />
                 <Route path='/search' component={Search} />
-                <Route path='/blog' component={Blog} />
                 <Redirect to='/home' />
-                <Home/>
+                <Home/>  
                
             </Switch>
+            
             
             <Footer/>
            

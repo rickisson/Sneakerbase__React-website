@@ -1,5 +1,7 @@
+// eslint-disable-next-line
+
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 
 function Footer(props){
     return(
@@ -9,10 +11,10 @@ function Footer(props){
                     <div className ="col">
                         <h5></h5>
                         <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Contact</li>
-                            <li>Blog</li> 
+                            {/* <li></li>
+                            <li></li>
+                            <li></li> */}
+                           
                         </ul>
                     </div>
                 </div>

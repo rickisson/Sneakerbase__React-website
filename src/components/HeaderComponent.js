@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { Component }  from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
@@ -41,16 +42,8 @@ class Header extends Component{
                                         <i className="fa fa-list fa-lg" /> Search
                                     </NavLink>
                                 </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/blog">
-                                        <i className="fa fa-info fa-lg" /> Blog
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/contactus">
-                                        <i className="fa fa-address-card fa-lg" /> Contact Us
-                                    </NavLink>
-                                </NavItem>
+                                
+                               
                             </Nav>
                         </Collapse>
 

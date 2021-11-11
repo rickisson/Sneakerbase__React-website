@@ -1,7 +1,7 @@
+
+// eslint-disable-next-line
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import t from "../img/t.png";
 
 
 class Search extends Component{
@@ -24,9 +24,16 @@ class Search extends Component{
        
        
     makeApiCall = () => {
-        const searchUrl = "https://api.thesneakerdatabase.com/v1/sneakers?limit=50&brand=nike&sort=retailPrice:asc";
 
-        fetch(searchUrl)
+    
+        
+        fetch("https://the-sneaker-database.p.rapidapi.com/sneakers?limit=100&brand=off-white", {
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "the-sneaker-database.p.rapidapi.com",
+                "x-rapidapi-key": "b0b80815f3mshd4ed854432ecd31p1b6fa8jsn1d3378f657ca"
+            }
+        })
         .then(response=>{
             return response.json();
         })
@@ -43,18 +50,15 @@ class Search extends Component{
         const shoes = this.state.results.map(brands =>(
             
             <div key={brands.id}>
-                <h1>{brands.shoe}</h1>
-                <h1>{brands.year}</h1>
-               <img src={brands.media.thumbUrl} alt="shoe-thumbnail" />
+                <h1>{brands.silhouette}</h1>
+                <h1>{brands.retailPrice}</h1>
+               <img src={brands.image.thumbnail} alt="shoe-thumbnail" />
              </div>
         ));
            
 
         return(
-
-       
-        
-        <div className="container"  style={{textAlign:'center'}} >
+            <div className="container"  style={{textAlign:'center'}} >
             <div className="row">
                
             </div>
@@ -81,11 +85,11 @@ class Search extends Component{
                     </button>
                 </div>
                </div> 
-            <div className="row">
+            {/* <div className="row">
                
                {shoes}
               
-            </div>
+            </div> */}
 
         </div>
        
